@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	/* Burger */
+    /* Burger */
     $(".toggle_mnu").click(function() {
         $(".sandwich").toggleClass("active");
     });
@@ -25,8 +25,8 @@ $(document).ready(function() {
     });
 
     $('.carousel').carousel({
-      interval: 8000
-  })
+        interval: 8000
+    })
 
     /*Scrool animation*/
     $(window).scroll(function() {
@@ -41,25 +41,48 @@ $(document).ready(function() {
     });
 
     /* Video button */
-    $('#play-video').on('click', function(e){
-      e.preventDefault();
-      $('#video-overlay').addClass('open');
-      $("#video-overlay").append('<iframe width="560" height="315" src="https://www.youtube.com/embed/ngElkyQ6Rhs" frameborder="0" allowfullscreen></iframe>');
-  });
+    $('#play-video').on('click', function(e) {
+        e.preventDefault();
+        $('#video-overlay').addClass('open');
+        $("#video-overlay").append('<iframe id="fancybox-frame1552831515612" name="fancybox-frame1552831515612" class="fancybox-iframe" frameborder="0" vspace="0" hspace="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allowtransparency="true" src="//www.youtube.com/embed/t_lJCr0kZTQ?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1" scrolling="no"></iframe>');
+    });
 
-    $('.video-overlay, .video-overlay-close').on('click', function(e){
-      e.preventDefault();
-      close_video();
-  });
+    $('.video-overlay, .video-overlay-close').on('click', function(e) {
+        e.preventDefault();
+        close_video();
+    });
 
-    $(document).keyup(function(e){
-      if(e.keyCode === 27) { close_video(); }
-  });
+    $(document).keyup(function(e) {
+        if (e.keyCode === 27) { close_video(); }
+    });
 
     function close_video() {
-      $('.video-overlay.open').removeClass('open').find('iframe').remove();
-  };
+        $('.video-overlay.open').removeClass('open').find('iframe').remove();
+    };
 
+    /* Tab play */
+    var tabChange = function() {
+        var tabs = $('.nav-tabs > li');
+        var active = tabs.filter('.active');
+        var next = active.next('li').length ? active.next('li').find('a') : tabs.filter(':first-child').find('a');
+        // Use the Bootsrap tab show method
+        next.tab('show');
+    };
+    // Tab Cycle function
+    var tabCycle = setInterval(tabChange, 6000);
+
+    // Tab click event handler
+    $('a').on('click', function(e) {
+        e.preventDefault();
+        // Stop the cycle
+        clearInterval(tabCycle);
+        // Show the clicked tabs associated tab-pane
+        $(this).tab('show');
+        // Start the cycle again in a predefined amount of time
+        setTimeout(function() {
+            //tabCycle = setInterval(tabChange, 5000);
+        }, 10000);
+    });
     /* Easy slide 
     $("header .top_mnu ul a").mPageScroll2id();*/
 

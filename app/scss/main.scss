@@ -5,6 +5,7 @@
 3.  Header
 4.  Slider
 5.  Free join
+6.  Social shopping
 
 */
 
@@ -38,7 +39,7 @@
 }
 
 /* 2. General styles */
-$padding-standart: 150px 0px;
+$padding-standart: 150px 0px 100px 0;
 $padding-small: 80px 0px;
 $typography-color-standart: 16px;
 $dark: #333333;
@@ -456,6 +457,11 @@ header {
                     letter-spacing: 2px;
                     margin-bottom: 25px;
 
+                    @media only screen and (max-device-width: 1919px) {
+                        font-size: 47px;
+                        line-height: 47px;
+                    }
+
                     @media only screen and (max-device-width: 1199px) {
                         font-size: 50px;
                         line-height: 50px;
@@ -567,7 +573,6 @@ header {
         ._gray-side {
             z-index: 1;
 
-
             @media only screen and (max-device-width: 991px) {
                 background: $grey;
                 overflow: hidden;
@@ -596,6 +601,10 @@ header {
                     margin-left: -120px;
                     margin-top: 100px;
                     transition: 1.5s;
+
+                    @media only screen and (max-device-width: 1919px) {
+                        height: 530px;
+                    }
 
                     @media only screen and (max-device-width: 1199px) {
                         height: 400px;
@@ -629,6 +638,10 @@ header {
                     margin-top: 50px;
                     transition: 1.5s;
 
+                    @media only screen and (max-device-width: 1919px) {
+                        height: 545px;
+                    }
+
                     @media only screen and (max-device-width: 1199px) {
                         height: 415px;
                         margin-left: 0px;
@@ -654,6 +667,10 @@ header {
                 padding-left: 70px;
                 top: 437px;
                 z-index: 99;
+
+                @media only screen and (max-device-width: 1919px) {
+                    top: 465px;
+                }
 
                 @media only screen and (max-device-width: 1199px) {
                     padding-left: 60px;
@@ -820,6 +837,10 @@ header {
     .image-box {
         text-align: right;
 
+        @media only screen and (max-device-width: 991px) {
+            text-align: center;
+        }
+
         img {
             width: 500px;
             max-width: 100%;
@@ -829,35 +850,85 @@ header {
     .text-box {
         padding-top: 100px;
 
+        @media only screen and (max-device-width: 1199px) {
+            padding-top: 70px;
+        }
+
+        @media only screen and (max-device-width: 991px) {
+            text-align: center;
+            padding-top: 30px;
+        }
+
         h1 {
             color: #444;
             font-family: "DINNextLTPro-Light", sans-serif, Arial;
             font-size: 48px;
             line-height: 60px;
+
+            @media only screen and (max-device-width: 1199px) {
+                font-size: 46px;
+            }
+
+            @media only screen and (max-device-width: 767px) {
+                font-size: 26px;
+                line-height: 26px;
+            }
         }
 
         p.main-text {
             color: rgb(51, 51, 51);
-            font-size: 17px;
+            font-size: 18px;
             line-height: 30px;
             width: 390px;
             max-width: 100%;
+            display: block;
+
+            @media only screen and (max-device-width: 1199px) {
+                width: 100%;
+            }
+
+            @media only screen and (max-device-width: 991px) {
+                font-size: 16px;
+            }
+
+            @media only screen and (max-device-width: 767px) {
+                font-size: 14px;
+                line-height: 22px;
+            }
         }
 
         .button-box {
+            padding-top: 40px;
+            padding-left: 30px;
+
+            .button-case {
+                display: inline-block;
+            }
+
+            @media only screen and (max-device-width: 1199px) {
+                padding-left: 20px;
+                padding-top: 30px;
+            }
+
+            .help-text {
+                margin-left: -30px;
+                text-transform: uppercase;
+                color: #ff5152;
+                font-family: "DINNextLTPro-Condensed", sans-serif, Arial;
+            }
+
             .video-play-button {
-                position: absolute;
-                z-index: 10;
-                top: 50%;
-                left: 50%;
+                z-index: 1;
                 transform: translateX(-50%) translateY(-50%);
                 box-sizing: content-box;
                 display: block;
-                width: 32px;
-                height: 44px;
-                /* background: #fa183d; */
+                width: 16px;
+                height: 0px;
                 border-radius: 50%;
-                padding: 18px 20px 18px 28px;
+                padding: 1px 20px 18px 28px;
+                float: left;
+                margin-top: 11px;
+                margin-left: 11px;
             }
 
             .video-play-button:before {
@@ -868,9 +939,9 @@ header {
                 top: 50%;
                 transform: translateX(-50%) translateY(-50%);
                 display: block;
-                width: 80px;
-                height: 80px;
-                background: #ba1f24;
+                width: 45px;
+                height: 45px;
+                background: $orange;
                 border-radius: 50%;
                 animation: pulse-border 1500ms ease-out infinite;
             }
@@ -883,8 +954,8 @@ header {
                 top: 50%;
                 transform: translateX(-50%) translateY(-50%);
                 display: block;
-                width: 80px;
-                height: 80px;
+                width: 45px;
+                height: 45px;
                 background: #fa183d;
                 border-radius: 50%;
                 transition: all 200ms;
@@ -908,9 +979,9 @@ header {
                 z-index: 3;
                 width: 0;
                 height: 0;
-                border-left: 32px solid #fff;
-                border-top: 22px solid transparent;
-                border-bottom: 22px solid transparent;
+                border-left: 12px solid #fff;
+                border-top: 8px solid transparent;
+                border-bottom: 8px solid transparent;
             }
 
             @keyframes pulse-border {
@@ -966,9 +1037,46 @@ header {
                 top: 50%;
                 left: 50%;
                 transform: translateX(-50%) translateY(-50%);
-                /* width: 90%; */
-                /* height: auto; */
+                width: 90%;
+                height: 90%;
                 box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+            }
+        }
+    }
+}
+
+/* 6.  Social shopping */
+.social-shopping {
+
+    .tab-box {
+
+        .nav.nav-tabs, .tab-content{
+            width: 50%;
+            float: left;
+        }
+
+        .nav.nav-tabs{
+            text-align: left;
+
+            li{
+                width: 100%;
+                display: block;
+
+                .tablink-item{
+
+                    img{
+                        width: 50px;
+                    }
+                }
+            }
+        }
+
+        .image-box {
+            text-align: center;
+
+            img {
+                max-width: 100%;
+                width: 400px;
             }
         }
     }
