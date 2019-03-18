@@ -46,6 +46,8 @@ $dark: #333333;
 $orange: #ff5152;
 $white: #fff;
 $grey: #f9f9f9;
+$red: #fe5454;
+$green: #34b57b;
 
 body {
     color: #787878;
@@ -63,6 +65,13 @@ section {
     @media only screen and (max-device-width: 991px) {
         padding: $padding-small;
     }
+}
+
+h1 {
+    font-family: "DINNextLTPro-Light", sans-serif, Arial;
+    color: #444;
+    font-size: 48px;
+    line-height: 60px;
 }
 
 h2 {
@@ -456,6 +465,7 @@ header {
                     line-height: 55px;
                     letter-spacing: 2px;
                     margin-bottom: 25px;
+                    color: $white;
 
                     @media only screen and (max-device-width: 1919px) {
                         font-size: 47px;
@@ -519,7 +529,7 @@ header {
 
                 a {
                     background-color: $white;
-                    color: #ff5152;
+                    color: $orange;
                     padding: 23px 70px;
                     font-size: 15px;
                     text-transform: uppercase;
@@ -683,7 +693,7 @@ header {
 
                 a {
                     background-color: $white;
-                    color: #ff5152;
+                    color: $orange;
                     padding: 25px 70px 22px 70px;
                     font-size: 15px;
                     text-transform: uppercase;
@@ -913,7 +923,7 @@ header {
             .help-text {
                 margin-left: -30px;
                 text-transform: uppercase;
-                color: #ff5152;
+                color: $orange;
                 font-family: "DINNextLTPro-Condensed", sans-serif, Arial;
             }
 
@@ -956,13 +966,13 @@ header {
                 display: block;
                 width: 45px;
                 height: 45px;
-                background: #fa183d;
+                background: $orange;
                 border-radius: 50%;
                 transition: all 200ms;
             }
 
             .video-play-button:hover:after {
-                background-color: darken(#fa183d, 10%);
+                background-color: darken($orange, 10%);
             }
 
             .video-play-button img {
@@ -1047,37 +1057,173 @@ header {
 
 /* 6.  Social shopping */
 .social-shopping {
+    padding: 100px 0px 100px 0;
 
     .tab-box {
 
-        .nav.nav-tabs, .tab-content{
+        h1,
+        h5 {
+            text-align: left;
+        }
+
+        h5 {
+            font-family: "DINNextLTPro-Condensed", sans-serif, Arial;
+            font-size: 16px;
+        }
+
+        h1 {
+            font-family: "DINNextLTPro-Light", sans-serif, Arial;
+            color: #444;
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        .nav.nav-tabs,
+        .tab-content {
             width: 50%;
             float: left;
         }
 
-        .nav.nav-tabs{
+        .nav.nav-tabs {
             text-align: left;
+            border-bottom: none;
 
-            li{
+            li {
                 width: 100%;
                 display: block;
+                padding: 50px;
+                transition: 1s;
+                margin: 10px 85px 10px 30px;
 
-                .tablink-item{
+                .tablink-item {
+
+                    img {
+                        width: 50px;
+                        transition: 1s;
+                    }
+
+                    .tablink-item.top1 {
+                        display: inline-block;
+                    }
+                }
+
+                .tablink-item.icon {
+                    float: left;
+                }
+
+                .tab-article-box {
+
+                    .tablink-item.top1 {
+                        color: $red;
+
+                        h5 {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    .tablink-item.top2 {
+                        color: #444;
+
+                        h5 {
+                            font-size: 22px;
+                        }
+                    }
+                }
+
+                .tablink-item.text{
+                    color: #828388;
+                    margin-top: 40px;
+                }
+
+                .button-case{
+                    background-color: $white;
+                    margin-right: 70px;
+                    border-radius: 50%;
 
                     img{
-                        width: 50px;
+                        box-shadow: 0 0 0 15px rgba(254,84,84,.2);
+                        border-radius: 50%;
+                        margin-right: unset;
+                    }
+                }
+            }
+
+            li.active {
+                background-color: rgba(216, 237, 227, .25);
+
+                .button-case{
+
+                    img{
+                        box-shadow: 0 0 0 15px rgba(254,84,84,.2);
+                        border-radius: 50%;
+
+                        animation: pulse-border 2000ms ease-out infinite;
+
+                        @keyframes pulse-border {
+                            0% {
+                                box-shadow: 0 0 0 0px rgba(254,84,84,.2);
+
+                            }
+
+                            50% {
+                             box-shadow: 0 0 0 15px rgba(254,84,84,.2);
+
+                         }
+
+                         100% {
+                            box-shadow: 0 0 0 0px rgba(254,84,84,.2);
+
+                        }
                     }
                 }
             }
         }
 
-        .image-box {
-            text-align: center;
+        li:nth-child(2), li:nth-child(3){
 
-            img {
-                max-width: 100%;
-                width: 400px;
+            h5.top{
+                color: $green;
             }
+
+            .button-case{
+
+                img{
+                   box-shadow: 0 0 0 15px rgba(52,181,123,0.2);
+
+                   @keyframes pulse-border {
+                    0% {
+                        box-shadow: 0 0 0 0px rgba(52,181,123,0.2);
+
+                    }
+
+                    50% {
+                     box-shadow: 0 0 0 15px rgba(52,181,123,0.2);
+
+                 }
+
+                 100% {
+                   box-shadow: 0 0 0 0px rgba(52,181,123,0.2);
+               }
+           }
+       }
+   } 
+}
+
+li:hover{
+    background-color: rgba(216, 237, 227, .25);
+}
+}
+
+.tab-content{
+
+    .image-box{
+        text-align: left;
+
+        img{
+            max-width: 100%;
+            width: 400px;   
         }
     }
+}
+}
 }

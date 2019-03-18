@@ -49,6 +49,12 @@ section {
     section {
       padding: 80px 0px; } }
 
+h1 {
+  font-family: "DINNextLTPro-Light", sans-serif, Arial;
+  color: #444;
+  font-size: 48px;
+  line-height: 60px; }
+
 h2 {
   font-size: 2rem; }
 
@@ -345,7 +351,8 @@ header {
           font-size: 55px;
           line-height: 55px;
           letter-spacing: 2px;
-          margin-bottom: 25px; }
+          margin-bottom: 25px;
+          color: #fff; }
           @media only screen and (max-device-width: 1919px) {
             .slider .__slider-box ._orange-side-main ._orange-side h1 {
               font-size: 47px;
@@ -713,14 +720,14 @@ header {
         display: block;
         width: 45px;
         height: 45px;
-        background: #fa183d;
+        background: #ff5152;
         -webkit-border-radius: 50%;
                 border-radius: 50%;
         -webkit-transition: all 200ms;
         -o-transition: all 200ms;
         transition: all 200ms; }
       .free-join .text-box .button-box .video-play-button:hover:after {
-        background-color: #da0528; }
+        background-color: #ff1e1f; }
       .free-join .text-box .button-box .video-play-button img {
         position: relative;
         z-index: 3;
@@ -801,20 +808,105 @@ header {
                 box-shadow: 0 0 15px rgba(0, 0, 0, 0.75); }
 
 /* 6.  Social shopping */
-.social-shopping .tab-box .nav.nav-tabs, .social-shopping .tab-box .tab-content {
-  width: 50%;
-  float: left; }
+.social-shopping {
+  padding: 100px 0px 100px 0; }
+  .social-shopping .tab-box h1,
+  .social-shopping .tab-box h5 {
+    text-align: left; }
+  .social-shopping .tab-box h5 {
+    font-family: "DINNextLTPro-Condensed", sans-serif, Arial;
+    font-size: 16px; }
+  .social-shopping .tab-box h1 {
+    font-family: "DINNextLTPro-Light", sans-serif, Arial;
+    color: #444;
+    font-size: 48px;
+    line-height: 60px; }
+  .social-shopping .tab-box .nav.nav-tabs,
+  .social-shopping .tab-box .tab-content {
+    width: 50%;
+    float: left; }
+  .social-shopping .tab-box .nav.nav-tabs {
+    text-align: left;
+    border-bottom: none; }
+    .social-shopping .tab-box .nav.nav-tabs li {
+      width: 100%;
+      display: block;
+      padding: 50px;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+      margin: 10px 85px 10px 30px; }
+      .social-shopping .tab-box .nav.nav-tabs li .tablink-item img {
+        width: 50px;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s; }
+      .social-shopping .tab-box .nav.nav-tabs li .tablink-item .tablink-item.top1 {
+        display: inline-block; }
+      .social-shopping .tab-box .nav.nav-tabs li .tablink-item.icon {
+        float: left; }
+      .social-shopping .tab-box .nav.nav-tabs li .tab-article-box .tablink-item.top1 {
+        color: #fe5454; }
+        .social-shopping .tab-box .nav.nav-tabs li .tab-article-box .tablink-item.top1 h5 {
+          margin-bottom: 0; }
+      .social-shopping .tab-box .nav.nav-tabs li .tab-article-box .tablink-item.top2 {
+        color: #444; }
+        .social-shopping .tab-box .nav.nav-tabs li .tab-article-box .tablink-item.top2 h5 {
+          font-size: 22px; }
+      .social-shopping .tab-box .nav.nav-tabs li .tablink-item.text {
+        color: #828388;
+        margin-top: 40px; }
+      .social-shopping .tab-box .nav.nav-tabs li .button-case {
+        background-color: #fff;
+        margin-right: 70px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+        .social-shopping .tab-box .nav.nav-tabs li .button-case img {
+          -webkit-box-shadow: 0 0 0 15px rgba(254, 84, 84, 0.2);
+                  box-shadow: 0 0 0 15px rgba(254, 84, 84, 0.2);
+          -webkit-border-radius: 50%;
+                  border-radius: 50%;
+          margin-right: unset; }
+    .social-shopping .tab-box .nav.nav-tabs li.active {
+      background-color: rgba(216, 237, 227, 0.25); }
+      .social-shopping .tab-box .nav.nav-tabs li.active .button-case img {
+        -webkit-box-shadow: 0 0 0 15px rgba(254, 84, 84, 0.2);
+                box-shadow: 0 0 0 15px rgba(254, 84, 84, 0.2);
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        -webkit-animation: pulse-border 2000ms ease-out infinite;
+                animation: pulse-border 2000ms ease-out infinite; }
 
-.social-shopping .tab-box .nav.nav-tabs {
-  text-align: left; }
-  .social-shopping .tab-box .nav.nav-tabs li {
-    width: 100%;
-    display: block; }
-    .social-shopping .tab-box .nav.nav-tabs li .tablink-item img {
-      width: 50px; }
+@keyframes pulse-border {
+  0% {
+    -webkit-box-shadow: 0 0 0 0px rgba(254, 84, 84, 0.2);
+            box-shadow: 0 0 0 0px rgba(254, 84, 84, 0.2); }
+  50% {
+    -webkit-box-shadow: 0 0 0 15px rgba(254, 84, 84, 0.2);
+            box-shadow: 0 0 0 15px rgba(254, 84, 84, 0.2); }
+  100% {
+    -webkit-box-shadow: 0 0 0 0px rgba(254, 84, 84, 0.2);
+            box-shadow: 0 0 0 0px rgba(254, 84, 84, 0.2); } }
+    .social-shopping .tab-box .nav.nav-tabs li:nth-child(2) h5.top, .social-shopping .tab-box .nav.nav-tabs li:nth-child(3) h5.top {
+      color: #34b57b; }
+    .social-shopping .tab-box .nav.nav-tabs li:nth-child(2) .button-case img, .social-shopping .tab-box .nav.nav-tabs li:nth-child(3) .button-case img {
+      -webkit-box-shadow: 0 0 0 15px rgba(52, 181, 123, 0.2);
+              box-shadow: 0 0 0 15px rgba(52, 181, 123, 0.2); }
 
-.social-shopping .tab-box .image-box {
-  text-align: center; }
-  .social-shopping .tab-box .image-box img {
-    max-width: 100%;
-    width: 400px; }
+@keyframes pulse-border {
+  0% {
+    -webkit-box-shadow: 0 0 0 0px rgba(52, 181, 123, 0.2);
+            box-shadow: 0 0 0 0px rgba(52, 181, 123, 0.2); }
+  50% {
+    -webkit-box-shadow: 0 0 0 15px rgba(52, 181, 123, 0.2);
+            box-shadow: 0 0 0 15px rgba(52, 181, 123, 0.2); }
+  100% {
+    -webkit-box-shadow: 0 0 0 0px rgba(52, 181, 123, 0.2);
+            box-shadow: 0 0 0 0px rgba(52, 181, 123, 0.2); } }
+    .social-shopping .tab-box .nav.nav-tabs li:hover {
+      background-color: rgba(216, 237, 227, 0.25); }
+  .social-shopping .tab-box .tab-content .image-box {
+    text-align: left; }
+    .social-shopping .tab-box .tab-content .image-box img {
+      max-width: 100%;
+      width: 400px; }
