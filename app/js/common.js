@@ -83,6 +83,74 @@ $(document).ready(function() {
             //tabCycle = setInterval(tabChange, 5000);
         }, 10000);
     });
+
+    /* Dropdown toggle */
+    jQuery('document').ready(function($) {
+        $('.dropdown__top').click(function() {
+            if ($(this).parent(".dropdown").hasClass("open")) {
+                $(this).parent(".dropdown").removeClass("open");
+                $(this).siblings(".dropdown__btm").slideUp(500);
+            } else {
+                $(".dropdown").removeClass("open");
+                $(".dropdown .dropdown__btm").slideUp(500);
+                $(this).parent(".dropdown").addClass("open");
+                $(this).siblings(".dropdown__btm").slideDown(500);
+            }
+        })
+    });
+
+    // /* S3 Carousel */
+    // var carousel = document.querySelector('.s3-carousel');
+    // var cells = carousel.querySelectorAll('.carousel__cell');
+    // var cellCount; // cellCount set from cells-range input value
+    // var selectedIndex = 4;
+    // var cellWidth = carousel.offsetWidth;
+    // //var rotateFn = 'rotateY';
+    // var radius, theta;
+    // //console.log( cellWidth, cellHeight );
+    // function rotateCarousel() {
+    //     var angle = theta * selectedIndex * -1;
+
+    //     carousel.style.transform = 'translateZ(' + -radius + 'px) ' +
+    //     rotateFn + '(' + angle + 'deg)';
+    // }
+    // var myVar = setInterval(myTimer, 3000);
+    // function myTimer() {
+    //     cells.forEach(function(arrayItem) {
+    //         arrayItem.style.opacity = 0;
+
+    //     });
+    //     if (selectedIndex < 1) selectedIndex = 4;
+    //     selectedIndex--;
+    //     rotateCarousel();
+    //     cells[selectedIndex].style.opacity = 1;
+    // }
+    // function changeCarousel() {
+    //     cellCount = 360;
+    //     theta = 1;
+    //     var cellSize = cellWidth;
+    //     radius = Math.round((cellSize / 2) / Math.tan(Math.PI / cellCount));
+    //     for (var i = 0; i < cells.length; i++) {
+    //         var cell = cells[i];
+    //         if (i < 4) {
+    //             // visible cell
+    //             cell.style.opacity = 1;
+    //             var cellAngle = theta * i;
+    //             cell.style.transform = rotateFn + '(' + cellAngle + 'deg) translateZ(' + radius + 'px)';
+    //         } else {
+    //             // hidden cell
+    //             cell.style.opacity = 0;
+    //             cell.style.transform = 'none';
+    //         }
+    //     }
+
+    //     //rotateCarousel();
+    // }
+    // rotateFn = 'rotateY';
+    // changeCarousel();
+
+
+
     /* Easy slide 
     $("header .top_mnu ul a").mPageScroll2id();*/
 
