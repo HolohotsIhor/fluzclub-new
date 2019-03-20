@@ -1679,7 +1679,7 @@ header {
                 }
 
                 @media only screen and (max-device-width: 545px) {
-                    margin-left: 0%;
+                    margin-left: 2%;
                 }
             }
         }
@@ -2305,6 +2305,7 @@ footer{
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    z-index: 99;
 }
 #top i{
     color: #fff;
