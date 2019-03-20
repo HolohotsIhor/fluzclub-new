@@ -7,6 +7,8 @@
 5.  Free join
 6.  Social shopping
 7.  Earn being
+8.  Withddraw
+9.  Brand for every need
 
 */
 
@@ -1671,11 +1673,11 @@ header {
 
                 @media only screen and (max-device-width: 767px) {
                     margin-left: 25%;
-                } 
+                }
 
                 @media only screen and (max-device-width: 545px) {
                     margin-left: 0%;
-                }               
+                }
             }
         }
 
@@ -1687,7 +1689,7 @@ header {
 
             @media only screen and (max-device-width: 545px) {
                 height: 550px;
-            } 
+            }
         }
 
         .s3-carousel {
@@ -1714,15 +1716,15 @@ header {
                 width: 280px;
             }
 
-            .img-box{
+            .img-box {
 
-                img{
+                img {
                     max-width: 100%;
                     border-radius: 10px 10px 0 0;
                     max-height: 385px;
                 }
 
-                .new-box{
+                .new-box {
                     position: absolute;
                     top: 20px;
                     left: 20px;
@@ -1735,7 +1737,7 @@ header {
                 }
             }
 
-            .text-box{
+            .text-box {
                 background-color: $white;
                 color: $dark;
                 font-size: 25px;
@@ -1745,14 +1747,14 @@ header {
                 padding-bottom: 60px;
                 border: solid 1px #ccc;
 
-                p{
+                p {
                     font-family: "DINNextLTPro-Light", sans-serif, Arial;
                     margin-bottom: 50px;
                 }
 
-                .logo-box{
+                .logo-box {
 
-                    img{
+                    img {
                         max-width: 60px;
                     }
                 }
@@ -1760,7 +1762,7 @@ header {
         }
     }
 
-    .carousel-content{
+    .carousel-content {
         text-align: left;
         padding-top: 200px;
 
@@ -1768,7 +1770,7 @@ header {
             padding-top: 50px;
         }
 
-        .article-box{
+        .article-box {
             width: 500px;
 
 
@@ -1778,16 +1780,16 @@ header {
                 text-align: center;
             }
 
-            h5{
+            h5 {
                 font-size: 14px;
                 line-height: 14px;
             }
 
-            h1{
+            h1 {
                 margin-bottom: 20px;
             }
 
-            p{
+            p {
                 font-size: 18px;
                 line-height: 32px;
                 margin-bottom: 40px;
@@ -1934,8 +1936,148 @@ header {
             }
         }
 
-        .dropdown__top:hover{
+        .dropdown__top:hover {
             background-color: $white;
+        }
+    }
+}
+
+/* 8.  Withddraw */
+.withddraw {
+    text-align: center;
+    height: 2000px;
+
+    .text-box {
+
+        .text-wrapper {
+
+            h5 {
+                font-family: "DINNextLTPro-Condensed", sans-serif, Arial;
+                font-size: 16px;
+            }
+
+            h1 {
+                font-family: "DINNextLTPro-Light", sans-serif, Arial;
+                color: #444;
+                font-size: 48px;
+                line-height: 60px;
+                margin-bottom: 20px;
+            }
+
+            p{
+                width: 600px;
+                display: block;
+                margin: 0 auto;
+                font-size: 18px;
+                line-height: 32px;
+
+                @media only screen and (max-device-width: 991px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .image-box{
+
+        .img-wrapper{
+            padding-top: 40px;
+            margin-bottom: 50px;
+
+            @media only screen and (max-device-width: 545px) {
+                margin-bottom: 20px;
+            }
+
+            img{
+                opacity: 0;
+                transition: 1s;
+                max-width: 100%;
+            }
+        }
+
+        .pay-box{
+            margin: 0 auto; 
+            display: inline-block;
+
+            .no-link{
+                width: 62px;
+                float: left;
+                margin: 0 40px;
+                padding-top: 10px;
+
+                @media only screen and (max-device-width: 700px) {
+                    margin: 0 20px;
+                }
+
+                @media only screen and (max-device-width: 545px) {
+                    margin: 0 5px;
+                }
+
+                img{
+                    max-width: 100%;
+                    filter: grayscale(100%);
+                    opacity: .55;
+                    height: auto;
+                    transition: 1s;
+                    cursor: pointer;
+                }
+
+                img:hover{
+                    filter: none;
+                    opacity: 1;
+                }
+            }
+
+            .no-link:nth-child(1){
+                width: 92px;
+
+                @media only screen and (max-device-width: 545px) {
+                    width: 70px;
+                }
+            }
+
+            .no-link:nth-child(2){
+                width: 50px;
+                padding-top: 0;
+
+                @media only screen and (max-device-width: 545px) {
+                    width: 35px;
+                    padding-top: 5px;
+                }
+            }
+
+            .no-link:nth-child(3){
+                width: 92px;
+
+                @media only screen and (max-device-width: 545px) {
+                    width: 70px;
+                }
+            }
+
+            .no-link:nth-child(4){
+                width: 92px;
+                padding-top: 7px;
+
+                @media only screen and (max-device-width: 545px) {
+                    width: 70px;
+                }
+            }
+        }
+    }
+}
+
+/* 9.  Brand for every need */
+.brand-for-every{
+
+    .logo-main-box{
+        background-color: #f9f9f9;
+
+        .logo-item{
+            padding: 0 70px;
+
+            img{
+                max-width: 100%;
+            }
         }
     }
 }

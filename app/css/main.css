@@ -7,6 +7,8 @@
 5.  Free join
 6.  Social shopping
 7.  Earn being
+8.  Withddraw
+9.  Brand for every need
 
 */
 /* 1. Fonts including */
@@ -1429,3 +1431,97 @@ header {
                 font-size: 14px; } }
     .earn-for-being .carousel-content .dropdown__top:hover {
       background-color: #fff; }
+
+/* 8.  Withddraw */
+.withddraw {
+  text-align: center;
+  height: 2000px; }
+  .withddraw .text-box .text-wrapper h5 {
+    font-family: "DINNextLTPro-Condensed", sans-serif, Arial;
+    font-size: 16px; }
+  .withddraw .text-box .text-wrapper h1 {
+    font-family: "DINNextLTPro-Light", sans-serif, Arial;
+    color: #444;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 20px; }
+  .withddraw .text-box .text-wrapper p {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 32px; }
+    @media only screen and (max-device-width: 991px) {
+      .withddraw .text-box .text-wrapper p {
+        width: 100%; } }
+  .withddraw .image-box .img-wrapper {
+    padding-top: 40px;
+    margin-bottom: 50px; }
+    @media only screen and (max-device-width: 545px) {
+      .withddraw .image-box .img-wrapper {
+        margin-bottom: 20px; } }
+    .withddraw .image-box .img-wrapper img {
+      opacity: 0;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+      max-width: 100%; }
+  .withddraw .image-box .pay-box {
+    margin: 0 auto;
+    display: inline-block; }
+    .withddraw .image-box .pay-box .no-link {
+      width: 62px;
+      float: left;
+      margin: 0 40px;
+      padding-top: 10px; }
+      @media only screen and (max-device-width: 700px) {
+        .withddraw .image-box .pay-box .no-link {
+          margin: 0 20px; } }
+      @media only screen and (max-device-width: 545px) {
+        .withddraw .image-box .pay-box .no-link {
+          margin: 0 5px; } }
+      .withddraw .image-box .pay-box .no-link img {
+        max-width: 100%;
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+        opacity: .55;
+        height: auto;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        cursor: pointer; }
+      .withddraw .image-box .pay-box .no-link img:hover {
+        -webkit-filter: none;
+                filter: none;
+        opacity: 1; }
+    .withddraw .image-box .pay-box .no-link:nth-child(1) {
+      width: 92px; }
+      @media only screen and (max-device-width: 545px) {
+        .withddraw .image-box .pay-box .no-link:nth-child(1) {
+          width: 70px; } }
+    .withddraw .image-box .pay-box .no-link:nth-child(2) {
+      width: 50px;
+      padding-top: 0; }
+      @media only screen and (max-device-width: 545px) {
+        .withddraw .image-box .pay-box .no-link:nth-child(2) {
+          width: 35px;
+          padding-top: 5px; } }
+    .withddraw .image-box .pay-box .no-link:nth-child(3) {
+      width: 92px; }
+      @media only screen and (max-device-width: 545px) {
+        .withddraw .image-box .pay-box .no-link:nth-child(3) {
+          width: 70px; } }
+    .withddraw .image-box .pay-box .no-link:nth-child(4) {
+      width: 92px;
+      padding-top: 7px; }
+      @media only screen and (max-device-width: 545px) {
+        .withddraw .image-box .pay-box .no-link:nth-child(4) {
+          width: 70px; } }
+
+/* 9.  Brand for every need */
+.brand-for-every .logo-main-box {
+  background-color: #f9f9f9; }
+  .brand-for-every .logo-main-box .logo-item {
+    padding: 0 70px; }
+    .brand-for-every .logo-main-box .logo-item img {
+      max-width: 100%; }
