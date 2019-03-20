@@ -9,6 +9,8 @@
 7.  Earn being
 8.  Withddraw
 9.  Brand for every need
+10. Contacts
+11. Footer
 
 */
 
@@ -1945,9 +1947,10 @@ header {
 /* 8.  Withddraw */
 .withddraw {
     text-align: center;
-    height: 2000px;
+    padding-top: 0;
 
     .text-box {
+        padding: 40px 0;
 
         .text-wrapper {
 
@@ -1964,7 +1967,7 @@ header {
                 margin-bottom: 20px;
             }
 
-            p{
+            p {
                 width: 600px;
                 display: block;
                 margin: 0 auto;
@@ -1978,9 +1981,9 @@ header {
         }
     }
 
-    .image-box{
+    .image-box {
 
-        .img-wrapper{
+        .img-wrapper {
             padding-top: 40px;
             margin-bottom: 50px;
 
@@ -1988,18 +1991,18 @@ header {
                 margin-bottom: 20px;
             }
 
-            img{
+            img {
                 opacity: 0;
                 transition: 1s;
                 max-width: 100%;
             }
         }
 
-        .pay-box{
-            margin: 0 auto; 
+        .pay-box {
+            margin: 0 auto;
             display: inline-block;
 
-            .no-link{
+            .no-link {
                 width: 62px;
                 float: left;
                 margin: 0 40px;
@@ -2013,7 +2016,7 @@ header {
                     margin: 0 5px;
                 }
 
-                img{
+                img {
                     max-width: 100%;
                     filter: grayscale(100%);
                     opacity: .55;
@@ -2022,13 +2025,13 @@ header {
                     cursor: pointer;
                 }
 
-                img:hover{
+                img:hover {
                     filter: none;
                     opacity: 1;
                 }
             }
 
-            .no-link:nth-child(1){
+            .no-link:nth-child(1) {
                 width: 92px;
 
                 @media only screen and (max-device-width: 545px) {
@@ -2036,7 +2039,7 @@ header {
                 }
             }
 
-            .no-link:nth-child(2){
+            .no-link:nth-child(2) {
                 width: 50px;
                 padding-top: 0;
 
@@ -2046,7 +2049,7 @@ header {
                 }
             }
 
-            .no-link:nth-child(3){
+            .no-link:nth-child(3) {
                 width: 92px;
 
                 @media only screen and (max-device-width: 545px) {
@@ -2054,7 +2057,7 @@ header {
                 }
             }
 
-            .no-link:nth-child(4){
+            .no-link:nth-child(4) {
                 width: 92px;
                 padding-top: 7px;
 
@@ -2067,17 +2070,217 @@ header {
 }
 
 /* 9.  Brand for every need */
-.brand-for-every{
+.brand-for-every {
+    padding: 0;
 
-    .logo-main-box{
-        background-color: #f9f9f9;
+    .text-box {
+        margin-bottom: 40px;
 
-        .logo-item{
-            padding: 0 70px;
+        h5 {
+            font-family: "DINNextLTPro-Condensed", sans-serif, Arial;
+            font-size: 16px;
+        }
 
-            img{
-                max-width: 100%;
+        h1 {
+            font-family: "DINNextLTPro-Light", sans-serif, Arial;
+            color: #444;
+            font-size: 48px;
+            line-height: 60px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            width: 550px;
+            display: block;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 32px;
+
+            @media only screen and (max-device-width: 991px) {
+                width: 100%;
             }
         }
+    }
+
+    .logo-main-box {
+        background-color: #f9f9f9;
+        padding: 80px 0;
+
+        .logo-item {
+            padding: 0 70px;
+
+            @media only screen and (max-device-width: 767px) {
+                padding: 0 20px;
+                margin-bottom: 10px;
+            }
+
+            img {
+                max-width: 100%;
+
+                @media only screen and (max-device-width: 767px) {
+                    max-width: 70%;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                @media only screen and (max-device-width: 320px) {
+                    max-width: 90%;
+                }
+            }
+        }
+    }
+
+    .logo-item:nth-child(6) {
+        padding-top: 15px;
+    }
+}
+
+/* 10. Contacts */
+.contacts {
+    padding-bottom: 60px;
+
+    .contact-box {
+        text-align: left;
+
+        h1 {
+            font-family: "DINNextLTPro-Light", sans-serif, Arial;
+            color: #444;
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        p {
+            width: 550px;
+            display: block;
+            margin: 0 auto;
+            font-size: 20px;
+            line-height: 32px;
+            text-align: center;
+
+            @media only screen and (max-device-width: 991px) {
+                width: 100%;
+            }
+        }
+
+        a {
+            display: block;
+            color: $dark;
+            transition: .5s;
+
+            span {
+                margin-right: 10px;
+                background-color: $orange;
+                padding: 6px 7px 3px 9px;
+                border-radius: 50%;
+                transition: .5s;
+
+                i {
+                    color: $white;
+                    transition: .5s;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        a:hover {
+            color: $orange;
+
+            span {
+                background-color: $white;
+
+                i {
+                    color: $orange;
+                }
+            }
+        }
+
+        a:first-child {
+            margin-bottom: 10px;
+
+            span {
+
+                i {
+                    font-size: 17px;
+                }
+            }
+        }
+
+        .logo-box {
+            text-align: center;
+            margin-top: 20px;
+
+            img {
+                max-width: 80px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .footer-button {
+        padding-top: 80px;
+        background: url(../img/footer-bg.jpg) center bottom no-repeat;
+        padding-bottom: 75px;
+
+        ._button-box {
+            margin-bottom: 40px;
+
+            @media only screen and (max-device-width: 1199px) {
+                margin-bottom: 80px;
+            }
+
+            @media only screen and (max-device-width: 991px) {
+                opacity: 1;
+                margin-bottom: 120px;
+            }
+
+            @media only screen and (max-device-width: 545px) {
+                margin-top: 40px;
+            }
+
+            a {
+                background-color: $orange;
+                color: $white;
+                padding: 23px 70px;
+                font-size: 15px;
+                text-transform: uppercase;
+                font-family: "DINNextLTPro-BoldCondensed", sans-serif, Arial;
+                letter-spacing: 3px;
+                border-radius: 50px;
+                transition: .2s;
+
+                &:hover {
+                    opacity: .9;
+                }
+            }
+        }
+
+        h5{
+            font-size: 11px;
+            font-family: "DINNextLTPro-Light", sans-serif, Arial;
+        }
+    }
+}
+
+/* 11. Footer */
+footer{
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    padding-bottom: 30px;
+
+    a{
+        color: $orange;
+        transition: .5s;
+
+        &:hover{
+            color: #333;
+            text-transform: none;
+        }
+    }
+
+    .top_string{
+        margin-bottom: 20px;
     }
 }

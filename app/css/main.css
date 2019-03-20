@@ -9,6 +9,8 @@
 7.  Earn being
 8.  Withddraw
 9.  Brand for every need
+10. Contacts
+11. Footer
 
 */
 /* 1. Fonts including */
@@ -1435,25 +1437,27 @@ header {
 /* 8.  Withddraw */
 .withddraw {
   text-align: center;
-  height: 2000px; }
-  .withddraw .text-box .text-wrapper h5 {
-    font-family: "DINNextLTPro-Condensed", sans-serif, Arial;
-    font-size: 16px; }
-  .withddraw .text-box .text-wrapper h1 {
-    font-family: "DINNextLTPro-Light", sans-serif, Arial;
-    color: #444;
-    font-size: 48px;
-    line-height: 60px;
-    margin-bottom: 20px; }
-  .withddraw .text-box .text-wrapper p {
-    width: 600px;
-    display: block;
-    margin: 0 auto;
-    font-size: 18px;
-    line-height: 32px; }
-    @media only screen and (max-device-width: 991px) {
-      .withddraw .text-box .text-wrapper p {
-        width: 100%; } }
+  padding-top: 0; }
+  .withddraw .text-box {
+    padding: 40px 0; }
+    .withddraw .text-box .text-wrapper h5 {
+      font-family: "DINNextLTPro-Condensed", sans-serif, Arial;
+      font-size: 16px; }
+    .withddraw .text-box .text-wrapper h1 {
+      font-family: "DINNextLTPro-Light", sans-serif, Arial;
+      color: #444;
+      font-size: 48px;
+      line-height: 60px;
+      margin-bottom: 20px; }
+    .withddraw .text-box .text-wrapper p {
+      width: 600px;
+      display: block;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 32px; }
+      @media only screen and (max-device-width: 991px) {
+        .withddraw .text-box .text-wrapper p {
+          width: 100%; } }
   .withddraw .image-box .img-wrapper {
     padding-top: 40px;
     margin-bottom: 50px; }
@@ -1519,9 +1523,157 @@ header {
           width: 70px; } }
 
 /* 9.  Brand for every need */
-.brand-for-every .logo-main-box {
-  background-color: #f9f9f9; }
-  .brand-for-every .logo-main-box .logo-item {
-    padding: 0 70px; }
-    .brand-for-every .logo-main-box .logo-item img {
-      max-width: 100%; }
+.brand-for-every {
+  padding: 0; }
+  .brand-for-every .text-box {
+    margin-bottom: 40px; }
+    .brand-for-every .text-box h5 {
+      font-family: "DINNextLTPro-Condensed", sans-serif, Arial;
+      font-size: 16px; }
+    .brand-for-every .text-box h1 {
+      font-family: "DINNextLTPro-Light", sans-serif, Arial;
+      color: #444;
+      font-size: 48px;
+      line-height: 60px;
+      margin-bottom: 20px; }
+    .brand-for-every .text-box p {
+      width: 550px;
+      display: block;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 32px; }
+      @media only screen and (max-device-width: 991px) {
+        .brand-for-every .text-box p {
+          width: 100%; } }
+  .brand-for-every .logo-main-box {
+    background-color: #f9f9f9;
+    padding: 80px 0; }
+    .brand-for-every .logo-main-box .logo-item {
+      padding: 0 70px; }
+      @media only screen and (max-device-width: 767px) {
+        .brand-for-every .logo-main-box .logo-item {
+          padding: 0 20px;
+          margin-bottom: 10px; } }
+      .brand-for-every .logo-main-box .logo-item img {
+        max-width: 100%; }
+        @media only screen and (max-device-width: 767px) {
+          .brand-for-every .logo-main-box .logo-item img {
+            max-width: 70%;
+            display: block;
+            margin: 0 auto; } }
+        @media only screen and (max-device-width: 320px) {
+          .brand-for-every .logo-main-box .logo-item img {
+            max-width: 90%; } }
+  .brand-for-every .logo-item:nth-child(6) {
+    padding-top: 15px; }
+
+/* 10. Contacts */
+.contacts {
+  padding-bottom: 60px; }
+  .contacts .contact-box {
+    text-align: left; }
+    .contacts .contact-box h1 {
+      font-family: "DINNextLTPro-Light", sans-serif, Arial;
+      color: #444;
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 10px;
+      text-align: center; }
+    .contacts .contact-box p {
+      width: 550px;
+      display: block;
+      margin: 0 auto;
+      font-size: 20px;
+      line-height: 32px;
+      text-align: center; }
+      @media only screen and (max-device-width: 991px) {
+        .contacts .contact-box p {
+          width: 100%; } }
+    .contacts .contact-box a {
+      display: block;
+      color: #333333;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+      .contacts .contact-box a span {
+        margin-right: 10px;
+        background-color: #ff5152;
+        padding: 6px 7px 3px 9px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s; }
+        .contacts .contact-box a span i {
+          color: #fff;
+          -webkit-transition: .5s;
+          -o-transition: .5s;
+          transition: .5s;
+          font-size: 14px; }
+    .contacts .contact-box a:hover {
+      color: #ff5152; }
+      .contacts .contact-box a:hover span {
+        background-color: #fff; }
+        .contacts .contact-box a:hover span i {
+          color: #ff5152; }
+    .contacts .contact-box a:first-child {
+      margin-bottom: 10px; }
+      .contacts .contact-box a:first-child span i {
+        font-size: 17px; }
+    .contacts .contact-box .logo-box {
+      text-align: center;
+      margin-top: 20px; }
+      .contacts .contact-box .logo-box img {
+        max-width: 80px;
+        margin-bottom: 20px; }
+  .contacts .footer-button {
+    padding-top: 80px;
+    background: url(../img/footer-bg.jpg) center bottom no-repeat;
+    padding-bottom: 75px; }
+    .contacts .footer-button ._button-box {
+      margin-bottom: 40px; }
+      @media only screen and (max-device-width: 1199px) {
+        .contacts .footer-button ._button-box {
+          margin-bottom: 80px; } }
+      @media only screen and (max-device-width: 991px) {
+        .contacts .footer-button ._button-box {
+          opacity: 1;
+          margin-bottom: 120px; } }
+      @media only screen and (max-device-width: 545px) {
+        .contacts .footer-button ._button-box {
+          margin-top: 40px; } }
+      .contacts .footer-button ._button-box a {
+        background-color: #ff5152;
+        color: #fff;
+        padding: 23px 70px;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-family: "DINNextLTPro-BoldCondensed", sans-serif, Arial;
+        letter-spacing: 3px;
+        -webkit-border-radius: 50px;
+                border-radius: 50px;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s; }
+        .contacts .footer-button ._button-box a:hover {
+          opacity: .9; }
+    .contacts .footer-button h5 {
+      font-size: 11px;
+      font-family: "DINNextLTPro-Light", sans-serif, Arial; }
+
+/* 11. Footer */
+footer {
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  padding-bottom: 30px; }
+  footer a {
+    color: #ff5152;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    footer a:hover {
+      color: #333;
+      text-transform: none; }
+  footer .top_string {
+    margin-bottom: 20px; }
