@@ -3,46 +3,48 @@ $(document).ready(function() {
     var dynamicUrlFb = window.location.href;
     var staticUrlFb = 'https://www.fluzclub.com/fb/';
 
-    if ( dynamicUrlFb == staticUrlFb && staticUrlFb.length == dynamicUrlFb.length ){
+    if (dynamicUrlFb == staticUrlFb && staticUrlFb.length == dynamicUrlFb.length) {
         var arrFacebook = [
-        "https://qhw5.app.link/zd8qY0FiOU",
-        "https://qhw5.app.link/9B65xCbL0U",
-        "https://qhw5.app.link/2kizL0hL0U",
-        "https://qhw5.app.link/OEQvdGonzU",
-        "https://qhw5.app.link/9YaHpeUJwU",
-        "https://qhw5.app.link/JDEJOXrz0U",
-        "https://qhw5.app.link/CHqbMFpz0U",
-        "https://qhw5.app.link/uJOF3rmz0U",
-        "https://qhw5.app.link/oKx2XbJO0U",
-        "https://qhw5.app.link/5w5bhfKO0U",
-        "https://qhw5.app.link/v69iQ6KO0U",
-        "https://qhw5.app.link/6troYYGA1U",
-        "https://qhw5.app.link/wD8c8ICA1U",
-        "https://qhw5.app.link/lh20buHuQU",
-        "https://qhw5.app.link/dXlFdAerbV",
-        "https://qhw5.app.link/kQS3XfxrbV",
-        "https://qhw5.app.link/LHsZA6BrbV",
-        "https://qhw5.app.link/hW5MIqHF0U",
-        "https://qhw5.app.link/eQHvgjKF0U",
-        "https://qhw5.app.link/lIqf68y9CU",
-        "https://qhw5.app.link/RGLo4DlCUU",
-        "https://qhw5.app.link/IN7q5G0PUU",
-        "https://qhw5.app.link/0lZgUDOTUU",
-        "https://qhw5.app.link/H2sLKwQTUU",
-        "https://qhw5.app.link/nD0co1RTUU",
-        "https://qhw5.app.link/659kbGsWUU",
-        "https://qhw5.app.link/OAjy5hzWUU",
-        "https://qhw5.app.link/Lvr8RgCWUU",
-        "https://qhw5.app.link/6983TrB42U",
-        "https://qhw5.app.link/f7SY28H42U",
-        "https://qhw5.app.link/g1IKgoJ42U",
-        "https://qhw5.app.link/ToPrvtr7MU",
-        "https://qhw5.app.link/SeEeIbpwBU",
-        "https://qhw5.app.link/f6J4F05K0U"];
+            "https://qhw5.app.link/zd8qY0FiOU",
+            "https://qhw5.app.link/9B65xCbL0U",
+            "https://qhw5.app.link/2kizL0hL0U",
+            "https://qhw5.app.link/OEQvdGonzU",
+            "https://qhw5.app.link/9YaHpeUJwU",
+            "https://qhw5.app.link/JDEJOXrz0U",
+            "https://qhw5.app.link/CHqbMFpz0U",
+            "https://qhw5.app.link/uJOF3rmz0U",
+            "https://qhw5.app.link/oKx2XbJO0U",
+            "https://qhw5.app.link/5w5bhfKO0U",
+            "https://qhw5.app.link/v69iQ6KO0U",
+            "https://qhw5.app.link/6troYYGA1U",
+            "https://qhw5.app.link/wD8c8ICA1U",
+            "https://qhw5.app.link/lh20buHuQU",
+            "https://qhw5.app.link/dXlFdAerbV",
+            "https://qhw5.app.link/kQS3XfxrbV",
+            "https://qhw5.app.link/LHsZA6BrbV",
+            "https://qhw5.app.link/hW5MIqHF0U",
+            "https://qhw5.app.link/eQHvgjKF0U",
+            "https://qhw5.app.link/lIqf68y9CU",
+            "https://qhw5.app.link/RGLo4DlCUU",
+            "https://qhw5.app.link/IN7q5G0PUU",
+            "https://qhw5.app.link/0lZgUDOTUU",
+            "https://qhw5.app.link/H2sLKwQTUU",
+            "https://qhw5.app.link/nD0co1RTUU",
+            "https://qhw5.app.link/659kbGsWUU",
+            "https://qhw5.app.link/OAjy5hzWUU",
+            "https://qhw5.app.link/Lvr8RgCWUU",
+            "https://qhw5.app.link/6983TrB42U",
+            "https://qhw5.app.link/f7SY28H42U",
+            "https://qhw5.app.link/g1IKgoJ42U",
+            "https://qhw5.app.link/ToPrvtr7MU",
+            "https://qhw5.app.link/SeEeIbpwBU",
+            "https://qhw5.app.link/f6J4F05K0U"
+        ];
+
         function getRandomInt(min, max) {
             return Math.floor(Math.random() * (max - min)) + min;
         }
-        var refferalIdRandomNumber = getRandomInt(0,arrFacebook.length);
+        var refferalIdRandomNumber = getRandomInt(0, arrFacebook.length);
         $("a.randomLinkFacebook").attr("href", arrFacebook[refferalIdRandomNumber]);
     }
     /* *****************Random link end****************** */
@@ -139,9 +141,10 @@ $(document).ready(function() {
         var angle = theta * selectedIndex * -1;
 
         carousel.style.transform = 'translateZ(' + -radius + 'px) ' +
-        rotateFn + '(' + angle + 'deg)';
+            rotateFn + '(' + angle + 'deg)';
     }
     var myVar = setInterval(myTimer, 3000);
+
     function myTimer() {
         cells.forEach(function(arrayItem) {
             arrayItem.style.opacity = 0;
@@ -152,6 +155,7 @@ $(document).ready(function() {
         rotateCarousel();
         cells[selectedIndex].style.opacity = 1;
     }
+
     function changeCarousel() {
         cellCount = 360;
         theta = 1;
@@ -176,7 +180,7 @@ $(document).ready(function() {
     rotateFn = 'rotateY';
     changeCarousel();
 
-     /* Tab play */
+    /* Tab play */
     var tabChange = function() {
         var tabs = $('.nav-tabs > li');
         var active = tabs.filter('.active');
@@ -198,6 +202,20 @@ $(document).ready(function() {
         setTimeout(function() {
             //tabCycle = setInterval(tabChange, 5000);
         }, 10000);
+    });
+
+    /* Scrool to top*/
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+            $('#top').fadeIn("fast"); // Fade in the arrow
+        } else {
+            $('#top').fadeOut("fast"); // Else fade out the arrow
+        }
+    });
+    $('#top').click(function() { // When arrow is clicked
+        $('body,html').animate({
+            scrollTop: 0 // Scroll to top of body
+        }, 500);
     });
 
 });
